@@ -116,7 +116,7 @@ li a:hover {
 
 /* ----------body----------- */
 main {
-  max-width: 70vw;
+  max-width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -515,7 +515,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 50px;
+  padding: 20px;
 }
 footer .footer__socialMedia {
   display: flex;
