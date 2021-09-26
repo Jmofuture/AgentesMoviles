@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentes Móviles - Contacto</title>
+    <meta name="description" content="Somos el  proveedor líder de telecomunicaciones en Uruguay con operación en los 19 departamentos.  Conoce nuestros servicios de Telefonía e Internet.">
+    <meta name="keywords" content="Planes Celulares, Llamadas Ilimitadas, Whatsapp Gratis, Roaming, Packs de Internet, Factura Electrónica">
+    <meta name="author" content="Jean Olmedillo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Nunito+Sans:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html">
+                <img src="/img/logo.png" alt="Logo Agentes Móviles" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Productos y Servicios</a>
+                    </li>
+                    <li>
+                        <a href="promociones.html">Promociones</a>
+                    </li>
+                    <li>
+                        <a href="quienessomos.html">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="dondeestamos.html">Dónde Estamos</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__banner">
+            <img src="../img/imgslide.jpg" alt="Agentes Móviles Uruguay" class="banner">
+            <div class="main__banner--title">
+                <h1>Agentes Móviles</h1>
+                <p>Líder de telecomunicaciones con operación en <strong>Uruguay.</strong></p>
+            </div>
+        </div>
+        <div class="title__contacto">
+            <h1>Ponte en contacto con nosotros</h1>
+        </div>
+        <form class="row g-3 contacto">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="inputPassword4" required>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="18 de Julio 1803" required>
+            </div>
+            <div class="col-md-4">
+                <label for="inputState">Departamento</label>
+                <input list="inputState" id="Departamento" name="Departamento" />
+                <datalist id="inputState">
+                <option value="Artigas"></option>
+                    <option value="Canelones"></option>
+                    <option value="Cerro Largo"></option>
+                    <option value="Colonia"></option>
+                    <option value="Durazno"></option>
+                    <option value="Flores"></option>
+                    <option value="Florida"></option>
+                    <option value="Lavalleja"></option>
+                    <option value="Maldonado"></option>
+                    <option value="Montevideo"></option>
+                    <option value="Paysandú"></option>
+                    <option value="Río Negro"></option>
+                    <option value="Rivera"></option>
+                    <option value="Rocha"></option>
+                    <option value="Salto"></option>
+                    <option value="San José"></option>
+                    <option value="Soriano"></option>
+                    <option value="Tacuarembó"></option>
+                    <option value="Treinta y Tres"></option>
+                </datalist>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn" id="btn-rojo">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <img src="/img/logo.png" alt="Logo Agentes Móviles" class="logo">
+        <div>
+            <p>Sitio desarrollado por <em>Jean Olmedillo</em></p>
+        </div>
+        <div class="footer__socialMedia">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <!-- -----JS----- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

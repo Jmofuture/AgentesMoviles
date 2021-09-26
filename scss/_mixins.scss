@@ -1,0 +1,10 @@
+@mixin boton ($colorBtn, $backBtn) {
+    background-color: $backBtn;
+    color: $colorBtn;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all .5s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
