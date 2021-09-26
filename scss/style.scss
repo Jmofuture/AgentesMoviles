@@ -123,7 +123,7 @@ li a:hover {
 /* ----------body----------- */
 
 main {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -134,11 +134,10 @@ main {
 /* -----------productos--------- */
 
 .titlepos {
-    margin: 50px 0;
-    height: 130%;
+    margin: 50px auto;
     .titlepos__container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
@@ -146,7 +145,7 @@ main {
 
 .productos__pospago {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     .productos__pospago--container {
@@ -161,7 +160,7 @@ main {
 
 .planespospago {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 1rem;
     text-align: center;
     flex-wrap: wrap;
