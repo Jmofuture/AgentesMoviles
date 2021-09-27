@@ -24,6 +24,7 @@ body {
     font-weight: 400 !important;
     font-size: 1.2rem !important;
     line-height: 1.7 !important;
+    min-width: 250px;
 }
 
 h1,
@@ -226,7 +227,12 @@ main {
     align-items: center;
     margin-top: 100px;
     flex-wrap: wrap;
-    .prepago__container,
+    .prepago__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
     .prepago__pasate {
         display: flex;
         justify-content: flex-start;

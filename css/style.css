@@ -24,6 +24,7 @@ body {
   font-weight: 400 !important;
   font-size: 1.2rem !important;
   line-height: 1.7 !important;
+  min-width: 250px;
 }
 
 h1,
@@ -225,7 +226,12 @@ main {
   margin-top: 100px;
   flex-wrap: wrap;
 }
-.prepago .prepago__container,
+.prepago .prepago__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 .prepago .prepago__pasate {
   display: flex;
   justify-content: flex-start;
@@ -531,21 +537,9 @@ footer i:hover {
 }
 
 /* -------------media------------ */
-@media screen and (max-width: 480px) {
-  body {
-    background-color: var(--main-bg-color);
-    font-family: "Josefin Sans", sans-serif !important;
-    color: var(--main-text-color);
-    margin: auto;
-    font-weight: 400 !important;
-    font-size: 1rem !important;
-    line-height: 1.7 !important;
-  }
-
+@media only screen and (max-width: 600px) {
   main {
-    margin: auto 20px;
-    height: 100vh;
-    width: 100vw;
+    margin: 0 auto;
   }
 
   h1,
@@ -592,10 +586,6 @@ h3 {
     display: none;
   }
 
-  .carousel__container img {
-    height: 30%;
-  }
-
   .services {
     flex-direction: column;
   }
@@ -615,47 +605,41 @@ h3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
     flex-direction: column;
   }
 
-  .prepago__container,
-.prepago__pasate {
-    display: flex;
+  .prepago {
+    text-align: center;
+  }
+  .prepago .prepago__container {
     justify-content: center;
-    align-items: center;
     text-align: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
-  .prepago__container .prepago__container--title,
-.prepago__container h3,
-.prepago__container img,
-.prepago__pasate .prepago__container--title,
-.prepago__pasate h3,
-.prepago__pasate img {
-    margin: 1rem auto;
+  .prepago .prepago__pasate {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     text-align: center;
+    align-items: center;
   }
-  .prepago__container img,
-.prepago__pasate img {
-    width: 100%;
+  .prepago h3 {
+    margin: 2rem;
   }
-  .prepago__container p,
-.prepago__pasate p {
-    margin-bottom: 2rem;
+  .prepago img {
+    width: 80%;
   }
 
-  .promosiones__triplica,
-.promosiones__pack {
+  .promociones__triplica,
+.promociones__pack {
     flex-direction: column;
   }
-  .promosiones__triplica img,
-.promosiones__pack img {
+  .promociones__triplica img,
+.promociones__pack img {
     margin: 1rem auto;
   }
 
-  .promosiones__pack {
+  .promociones__pack {
     flex-direction: column-reverse;
   }
 
