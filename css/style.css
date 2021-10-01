@@ -594,9 +594,8 @@ h3 {
   .header nav {
     position: absolute;
     background-color: var(--main-text-color);
-    margin: 15rem -200% 0 0;
     display: none;
-    transition: all 0.5s;
+    transition: all 1s;
   }
   .header ul {
     justify-content: space-evenly;
