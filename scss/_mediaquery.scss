@@ -33,7 +33,6 @@
         }
         label:hover {
             cursor: pointer;
-            background-color: var(--main-bgul-color);
         }
         nav {
             position: absolute;
@@ -49,7 +48,7 @@
             font-size: .8rem;
         }
         #btn-menu:checked~.menu {
-            margin: 15rem -25rem 0 0
+            margin: 15rem -20rem 0 0
         }
     }
     .main__banner--title {

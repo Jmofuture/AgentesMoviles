@@ -75,7 +75,6 @@ h3 {
 }
 .header label:hover {
   cursor: pointer;
-  background-color: var(--main-bgul-color);
 }
 .header ul {
   display: flex;
@@ -591,7 +590,6 @@ h3 {
   }
   .header label:hover {
     cursor: pointer;
-    background-color: var(--main-bgul-color);
   }
   .header nav {
     position: absolute;
@@ -607,7 +605,7 @@ h3 {
     font-size: 0.8rem;
   }
   .header #btn-menu:checked ~ .menu {
-    margin: 15rem -25rem 0 0;
+    margin: 15rem -20rem 0 0;
   }
 
   .main__banner--title h1 {
