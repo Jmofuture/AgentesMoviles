@@ -18,11 +18,10 @@
         font-weight: 300;
     }
     .logo {
-        width: 4rem;
+        width: 2rem;
     }
     header {
         position: relative;
-        overflow: hidden;
     }
     .header {
         label {
@@ -38,7 +37,9 @@
         nav {
             position: absolute;
             background-color: var(--main-text-color);
-            margin-right: -200%;
+            margin: 15rem -200% 0 0;
+            display: none;
+            transition: all .5s;
         }
         ul {
             justify-content: space-evenly;
@@ -49,7 +50,8 @@
             font-size: .8rem;
         }
         #btn-menu:checked~.menu {
-            margin: 15rem -20rem 0 0
+            margin: 15rem -20rem 0 0;
+            display: block;
         }
     }
     .main__banner--title {
