@@ -197,15 +197,31 @@ main {
   margin: 10px 0 0 0;
 }
 
-.btn-rojo {
-  background-color: var(--main-title-color);
-  color: var(--main-bg-color);
+.btn-blk {
+  background-color: Var(--main-text-color);
+  color: Var(--main-bg-color);
   font-size: 1.5rem;
   border-radius: 10px;
   padding: 15px;
   transition: all 0.5s ease-in-out;
   border: none;
   cursor: pointer;
+}
+
+.btn-rojo {
+  background-color: var(--main-title-color);
+  color: var(--main-bg-color);
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-blk:hover {
+  background-color: var(--main-title-color);
+  transform: scale(1.2);
 }
 
 .btn-rojo:hover {
@@ -436,81 +452,90 @@ main {
 /* -------------Contacto------------ */
 .title__contacto {
   text-align: center;
-  margin: 4rem auto 0;
+  margin: 4rem auto;
 }
 
 .contacto {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
-  margin: 6rem auto;
+  margin: 0 auto;
   flex-wrap: wrap;
+  width: 100%;
 }
-
-.mensajes,
-.email {
+.contacto .mensajes,
+.contacto .email {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 2rem auto;
+  margin: 3rem 1rem;
 }
-
-.data {
+.contacto .data {
   display: flex;
   justify-content: space-between;
+  margin: 0.4rem;
+  padding: 0.3rem;
+  width: 100%;
 }
-
-.data,
-label,
-input {
-  margin: 0.3rem;
+.contacto input {
+  margin: 0.2rem;
   padding: 0.2rem;
   width: 100%;
 }
-
-.data input,
-textarea {
+.contacto label {
+  margin: 0.3rem;
+  width: 50%;
+  cursor: pointer;
+}
+.contacto .btn-form {
+  width: 100%;
+  text-align: center;
+}
+.contacto .btn-form button {
+  margin: 0.3rem;
+}
+.contacto .area {
+  width: 100%;
+}
+.contacto .area textarea {
   border: none;
   border-radius: 0.3rem;
   outline: var(--main-bgul-color) solid 1px;
+  width: 100%;
+  resize: none;
 }
-
-.data input:focus {
+.contacto .data input:focus {
   border: none;
   outline: var(--main-title-color) solid 1px;
   border-radius: 0.3rem;
 }
-
-.area textarea:focus {
+.contacto .area textarea:focus {
   border: none;
   outline: var(--main-title-color) solid 1px;
   border-radius: 0.3rem;
 }
-
-.data label {
-  width: 40%;
-  cursor: pointer;
+.contacto .mensajes {
+  align-items: flex-start;
 }
-
-.mensajes a,
-i {
+.contacto .mensajes a,
+.contacto i {
   padding: 1rem;
   font-size: 2rem;
   text-decoration: none;
   color: var(--main-hd-color);
 }
-
-.mensajes .fa-whatsapp:hover {
+.contacto .mensajes .fa-whatsapp:hover {
   color: #075E54;
 }
-
-.mensajes .fa-facebook-messenger:hover {
+.contacto .mensajes .fa-facebook-messenger:hover {
   color: #006AFF;
 }
-
-.mensajes .fa-telegram:hover {
+.contacto .mensajes .fa-telegram:hover {
   color: #0088CC;
+}
+.contacto .mensajes .fa-instagram:hover {
+  color: #C13584;
 }
 
 /* -------------footer------------ */
@@ -698,8 +723,22 @@ h3 {
 .data input {
     margin: 0.2rem;
     padding: 0.1rem;
-    width: 50%;
+    width: 100%;
     border-radius: 0.2rem;
+  }
+
+  .contacto .mensajes {
+    display: block;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .mensajes span {
+    display: none;
+  }
+
+  .mensajes i {
+    font-size: 3rem;
   }
 
   footer {

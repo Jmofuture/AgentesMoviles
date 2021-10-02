@@ -146,9 +146,20 @@
         input {
             margin: .2rem;
             padding: .1rem;
-            width: 50%;
+            width: 100%;
             border-radius: .2rem;
         }
+    }
+    .contacto .mensajes {
+        display: block;
+        flex-direction: row;
+        text-align: center;
+    }
+    .mensajes span {
+        display: none;
+    }
+    .mensajes i {
+        font-size: 3rem;
     }
     // -------------------------------
     footer {
