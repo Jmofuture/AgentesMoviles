@@ -138,6 +138,19 @@
     .section__title--map {
         flex-direction: column;
     }
+    // -------------contacto------------
+    .data {
+        flex-direction: column;
+        align-items: center;
+        label,
+        input {
+            margin: .2rem;
+            padding: .1rem;
+            width: 50%;
+            border-radius: .2rem;
+        }
+    }
+    // -------------------------------
     footer {
         font-size: 1rem;
         p {

@@ -18,12 +18,12 @@ html {
 
 body {
   background-color: var(--main-bg-color);
-  font-family: "Josefin Sans", sans-serif !important;
+  font-family: "Josefin Sans", sans-serif;
   color: var(--main-text-color);
   margin: auto;
-  font-weight: 400 !important;
-  font-size: 1.2rem !important;
-  line-height: 1.7 !important;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7;
   min-width: 250px;
 }
 
@@ -196,7 +196,8 @@ main {
 .planespospago .call {
   margin: 10px 0 0 0;
 }
-.planespospago .btn-rojo {
+
+.btn-rojo {
   background-color: var(--main-title-color);
   color: var(--main-bg-color);
   font-size: 1.5rem;
@@ -206,7 +207,8 @@ main {
   border: none;
   cursor: pointer;
 }
-.planespospago .btn-rojo:hover {
+
+.btn-rojo:hover {
   background-color: var(--main-text-color);
   transform: scale(1.2);
 }
@@ -440,25 +442,75 @@ main {
 .contacto {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
   margin: 6rem auto;
-  max-width: 900px;
+  flex-wrap: wrap;
 }
 
-#btn-rojo {
-  background-color: var(--main-title-color);
-  color: var(--main-bg-color);
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: 15px;
-  transition: all 0.5s ease-in-out;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
+.mensajes,
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin: 2rem auto;
 }
-#btn-rojo:hover {
-  background-color: var(--main-text-color);
-  transform: scale(1.2);
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data,
+label,
+input {
+  margin: 0.3rem;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+.data input,
+textarea {
+  border: none;
+  border-radius: 0.3rem;
+  outline: var(--main-bgul-color) solid 1px;
+}
+
+.data input:focus {
+  border: none;
+  outline: var(--main-title-color) solid 1px;
+  border-radius: 0.3rem;
+}
+
+.area textarea:focus {
+  border: none;
+  outline: var(--main-title-color) solid 1px;
+  border-radius: 0.3rem;
+}
+
+.data label {
+  width: 40%;
+  cursor: pointer;
+}
+
+.mensajes a,
+i {
+  padding: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--main-hd-color);
+}
+
+.mensajes .fa-whatsapp:hover {
+  color: #075E54;
+}
+
+.mensajes .fa-facebook-messenger:hover {
+  color: #006AFF;
+}
+
+.mensajes .fa-telegram:hover {
+  color: #0088CC;
 }
 
 /* -------------footer------------ */
@@ -636,6 +688,18 @@ h3 {
 
   .section__title--map {
     flex-direction: column;
+  }
+
+  .data {
+    flex-direction: column;
+    align-items: center;
+  }
+  .data label,
+.data input {
+    margin: 0.2rem;
+    padding: 0.1rem;
+    width: 50%;
+    border-radius: 0.2rem;
   }
 
   footer {

@@ -9,7 +9,6 @@
     <meta name="description" content="Somos el  proveedor líder de telecomunicaciones en Uruguay con operación en los 19 departamentos.  Conoce nuestros servicios de Telefonía e Internet.">
     <meta name="keywords" content="Planes Celulares, Llamadas Ilimitadas, Whatsapp Gratis, Roaming, Packs de Internet, Factura Electrónica">
     <meta name="author" content="Jean Olmedillo">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -59,31 +58,35 @@
         <div class="title__contacto">
             <h1>Ponte en contacto con nosotros</h1>
         </div>
-        <form class="row g-3 contacto">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputEmail4" required>
+        <section class="contacto">
+            <div class="mensajes">
+                <legend> Mensajería:</legend>
+                <a href="" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                <a href="" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+                <a href="" target="_blank"><i class="fab fa-facebook-messenger"></i>Messenger</a>
             </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="inputPassword4" required>
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="18 de Julio 1803" required>
-            </div>
-            <div class="col-md-4">
-                <label for="inputState">Departamento</label>
-                <input list="inputState" id="Departamento" name="Departamento" />
-                <datalist id="inputState">
+
+            <div>
+                <legend>Correo electrónico:</legend>
+                <form class="email">
+                    <div class="data">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <label for="lastname" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+                    <div class="data">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <label for="tlf" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="tlf" required>
+                    </div>
+                    <div class="data">
+                        <label for="inputAddress" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="18 de Julio 1803" required>
+                        <label for="Departamento">Departamento:</label>
+                        <input list="inputState" id="Departamento" name="Departamento" />
+                        <datalist id="inputState">
                 <option value="Artigas"></option>
                     <option value="Canelones"></option>
                     <option value="Cerro Largo"></option>
@@ -104,11 +107,18 @@
                     <option value="Tacuarembó"></option>
                     <option value="Treinta y Tres"></option>
                 </datalist>
+                    </div>
+                    <div class="area">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="" id="mensaje" cols="60" rows="5"></textarea>
+                    </div>
+                    <div class="btn-form">
+                        <button type="submit" class="btn-rojo">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </form>
             </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary btn" id="btn-rojo">Enviar</button>
-            </div>
-        </form>
+        </section>
     </main>
     <footer class="footer">
         <img src="../img/logo.png" alt="Logo Agentes Móviles" class="logo">
@@ -116,13 +126,11 @@
             <p>Sitio desarrollado por <em>Jean Olmedillo</em></p>
         </div>
         <div class="footer__socialMedia">
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
-    <!-- -----JS----- -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>
 
