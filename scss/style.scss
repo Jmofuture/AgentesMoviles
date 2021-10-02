@@ -95,10 +95,9 @@ h3 {
         color: var(--main-bg-color);
         transition: .2s;
     }
-}
-
-li:hover {
-    background-color: var(--main-title-color);
+    li:hover {
+        background-color: var(--main-title-color);
+    }
 }
 
 
@@ -122,6 +121,7 @@ li:hover {
         flex-direction: column;
         height: 200px;
         position: absolute;
+        margin-left: 10%;
         line-height: 3rem;
         font-weight: 700;
         animation-duration: 2s;
@@ -420,91 +420,29 @@ main {
 
 /* -----------Donde estamos--------- */
 
-.section__title {
+.banner--map {
+    width: 100%;
+    height: 60vh;
+    margin-left: 50%;
+}
+
+.section__title--map {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin: 5rem 0;
 }
 
 .section__map {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 4fr;
-    grid-template-areas: 'departamentos departamentos' 'lista mapa';
-    margin: 0 0 100px 0;
-    column-gap: 30px;
-    .section__map--titleList {
-        grid-area: departamentos;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-    }
-    .section__map--menu {
-        grid-area: lista;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section__map--container {
-        grid-area: mapa;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-    }
+    margin: 0 0 2rem 0;
 }
 
-.section__map ul {
-    background-color: var(--main-bgul-color);
-    color: var(--main-bg-color);
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    width: 500px;
-    li {
-        list-style: none;
-        padding: 5px;
-        .submenu {
-            display: flex;
-            justify-content: center;
-            transition: all 2s;
-            cursor: pointer;
-        }
-    }
-}
-
-.submenu ul {
-    display: none;
-    font-weight: 100;
-    a {
-        list-style: none;
-        text-decoration: none;
-        color: var(--main-bg-color);
-    }
-}
-
-ul li:hover>ul,
-ul li ul:hover {
-    visibility: visible;
+.section__map--container,
+.location {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.section__map a:hover {
-    color: var(--main-title-color);
-    border-bottom: 2px solid var(--main-bg-color);
-}
-
-.map {
-    width: 40rem;
+    height: 60vh;
 }
 
 
