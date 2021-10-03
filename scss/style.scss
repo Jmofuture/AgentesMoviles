@@ -64,32 +64,24 @@
             align-items: center;
             width: 100%;
         }
-        input {
-            display: none;
-        }
+        #btn-menu,
         label {
             display: none;
-            align-items: center;
-            justify-content: center;
-            width: 2rem;
-            height: 2rem;
-        }
-        label:hover {
-            cursor: pointer;
         }
         ul {
             display: flex;
-            justify-content: space-evenly;
             align-items: center;
+            justify-content: space-between;
+            width: 100%;
         }
         li {
+            text-align: center;
             list-style: none;
-            flex-grow: 1;
             font-size: 1em;
         }
         a {
             display: block;
-            padding: .5rem;
+            padding: 0.5rem 1rem;
             text-decoration: none;
             color: var(--main-bg-color);
             transition: .2s;
