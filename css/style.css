@@ -56,36 +56,32 @@ h3 {
   width: 100%;
   top: 0%;
   z-index: 1000;
+  color: var(--main-bg-color);
 }
 .header .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
 }
 .header #btn-menu,
 .header label {
   display: none;
 }
-.header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.header .menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
 }
-.header li {
-  text-align: center;
-  list-style: none;
-  font-size: 1em;
-}
-.header a {
-  display: block;
-  padding: 0.5rem 1rem;
+.header .menu__item {
+  padding: 1rem;
   text-decoration: none;
   color: var(--main-bg-color);
-  transition: 0.2s;
+  transition: 0.5s;
 }
-.header li:hover {
+.header .menu__item:hover {
   background-color: var(--main-title-color);
 }
 
@@ -589,44 +585,36 @@ h3 {
     width: 2rem;
   }
 
-  header {
-    position: relative;
-  }
-
   .header .header__container {
-    flex-direction: row-reverse;
     align-items: center;
   }
   .header label {
     display: block;
-  }
-  .header label img {
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
+    cursor: pointer;
   }
   .header .menu {
-    position: absolute;
-    width: 50%;
-    background-color: var(--main-hd-color);
-    display: none;
-    margin: 1rem 0 0 2rem;
-  }
-  .header .menu li {
-    width: 100%;
-  }
-  .header .menu ul {
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-  }
-  .header label:hover {
-    cursor: pointer;
+    align-items: center;
+    position: fixed;
+    margin: 33rem 0 0 0;
+    background-color: var(--main-hd-color);
+    width: 100%;
+    text-align: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    transition: -webkit-clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
   }
   .header a {
     font-size: 1rem;
+    width: 100%;
   }
-  .header #btn-menu:checked ~ .menu {
-    margin: 15rem 15rem 0 0;
-    display: flex;
+  .header #btn-menu:checked + .menu {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
   }
 
   .main__banner--title h1 {
