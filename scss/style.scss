@@ -482,6 +482,8 @@
             width: 100%;
         }
         input {
+            border: none;
+            outline: var(--main-bgul-color) solid 1px;
             margin: .2rem;
             padding: .2rem;
             width: 100%;
