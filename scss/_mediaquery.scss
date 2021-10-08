@@ -2,15 +2,18 @@
     main {
         margin: 0 auto;
     }
+    p {
+        font-size: 1rem;
+    }
     h1,
     h2,
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         color: var(--main-title-color);
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 400;
     }
     h3 {
@@ -18,46 +21,49 @@
         font-weight: 300;
     }
     .logo {
-        width: 2rem;
+        width: 3rem;
     }
-    .header {
+    header {
+        position: sticky;
         .header__container {
-            align-items: center;
-        }
-        label {
-            display: block;
-            cursor: pointer;
-        }
-        .menu {
-            display: flex;
-            justify-content: space-evenly;
             flex-direction: column;
-            align-items: center;
-            position: fixed;
-            margin: 33rem 0 0 0;
-            background-color: var(--main-hd-color);
-            width: 100%;
-            text-align: center;
-            clip-path: circle(0 at center);
-            transition: clip-path 1s ease-in-out;
+            align-items: flex-start;
+            padding: 1.5rem 0;
+            ul {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 92vh;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                display: none;
+                opacity: 0;
+                li {
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                }
+            }
         }
-        a {
-            font-size: 1rem;
-            width: 100%;
+        .menu.active {
+            display: flex;
+            text-decoration: none;
+            animation: menu .5s ease-in-out both;
         }
-        #btn-menu:checked+.menu {
-            clip-path: circle(100% at center);
+        .ham {
+            display: block;
+            position: absolute;
+            top: 2.2rem;
+            right: 1.3rem;
         }
     }
     .main__banner--title {
-        h1 {
-            font-size: 2rem;
-            margin: 20px 0 0 0;
-        }
         p {
             display: none;
         }
     }
+    // ---------------------
     .services {
         flex-direction: column;
         div {
@@ -70,26 +76,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
         flex-direction: column;
+        img {
+            width: 80%;
+        }
         .productos__pospago--container {
             display: flex;
             justify-content: center;
             text-align: center;
             flex-direction: column;
+            width: 100%;
         }
+    }
+    .services div {
+        margin: 2rem auto;
+        text-align: center;
     }
     .prepago {
         text-align: center;
+        margin: 0 auto;
         .prepago__container {
             justify-content: center;
-            text-align: center;
             flex-wrap: wrap;
             align-items: center;
         }
         .prepago__pasate {
             flex-wrap: wrap-reverse;
             justify-content: center;
-            text-align: center;
             align-items: center;
         }
         h3 {

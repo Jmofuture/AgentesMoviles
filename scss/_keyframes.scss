@@ -6,3 +6,12 @@
         margin-left: 10%;
     }
 }
+
+@keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
