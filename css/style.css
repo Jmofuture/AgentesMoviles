@@ -70,9 +70,9 @@ header .menu {
   display: flex;
 }
 header .menu li {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem;
   list-style: none;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 header .menu li .menu__item {
   font-weight: 400;
@@ -639,7 +639,8 @@ h3 {
     right: 1.3rem;
   }
 
-  .main__banner--title p {
+  .main__banner--title p,
+.main__banner--title h1 {
     display: none;
   }
 
@@ -707,6 +708,229 @@ h3 {
 
   .promociones__pack {
     flex-direction: column-reverse;
+  }
+
+  .main__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main__section p {
+    margin: 1rem auto;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner--map {
+    width: 100%;
+    height: 40vh;
+    margin-left: 0%;
+  }
+
+  .section__title--map {
+    flex-direction: column;
+  }
+
+  .data {
+    flex-direction: column;
+    align-items: center;
+  }
+  .data label,
+.data input {
+    margin: 0.2rem;
+    padding: 0.1rem;
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+
+  .contacto .mensajes {
+    display: block;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .mensajes span {
+    display: none;
+  }
+
+  .mensajes i {
+    font-size: 3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+  footer p {
+    display: none;
+  }
+  footer .footer__socialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-right: 10px;
+  }
+  footer .footer__socialMedia i {
+    font-size: 2rem;
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  main {
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1,
+h2,
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-title-color);
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  header {
+    position: sticky;
+  }
+  header .header__container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+  }
+  header .header__container ul {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+  }
+  header .header__container ul li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  header .menu.active {
+    display: flex;
+    text-decoration: none;
+    -webkit-animation: menu 0.5s ease-in-out both;
+            animation: menu 0.5s ease-in-out both;
+  }
+  header .ham {
+    display: block;
+    position: absolute;
+    top: 2.2rem;
+    right: 1.3rem;
+  }
+
+  .main__banner--title p,
+.main__banner--title h1 {
+    display: none;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+  .services div {
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .productos__pospago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .productos__pospago img {
+    width: 80%;
+  }
+  .productos__pospago .productos__pospago--container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .services div {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .prepago {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .prepago .prepago__container {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .prepago .prepago__pasate {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .prepago h3 {
+    margin: 2rem;
+  }
+  .prepago img {
+    width: 80%;
+  }
+
+  .promociones__triplica,
+.promociones__pack {
+    flex-direction: column;
+  }
+  .promociones__triplica img,
+.promociones__pack img {
+    margin: 1rem auto;
+  }
+  .promociones__triplica ul,
+.promociones__pack ul {
+    font-size: 1rem;
+  }
+
+  .promociones__pack {
+    flex-direction: column-reverse;
+  }
+
+  .promociones__others--list {
+    font-size: 1rem;
+    display: grid;
+    text-align: center;
+  }
+  .promociones__others--list li {
+    width: 80%;
+    margin: 1rem auto;
   }
 
   .main__section {

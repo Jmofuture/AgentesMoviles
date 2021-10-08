@@ -70,9 +70,9 @@
         .menu {
             display: flex;
             li {
-                padding: 1.5rem 2rem;
+                padding: 1.5rem 1.5rem;
                 list-style: none;
-                transition: 1s;
+                transition: 1s ease-in-out;
                 .menu__item {
                     font-weight: 400;
                     padding: 1rem;
