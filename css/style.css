@@ -21,14 +21,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: var(--main-text-color);
   margin: auto;
-  font-weight: 400;
-  font-size: 1.5rem;
   line-height: 1.7;
   min-width: 250px;
-}
-
-p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 h1,
@@ -46,7 +42,6 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  font-weight: 400;
 }
 
 .logo {
@@ -74,17 +69,17 @@ header .menu {
   display: flex;
 }
 header .menu li {
-  padding: 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   list-style: none;
-  transition: 0.7s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 header .menu li .menu__item {
-  font-weight: 400;
+  display: block;
   padding: 1rem;
   text-decoration: none;
   color: var(--main-bg-color);
 }
-header .menu li:hover {
+header .menu li :hover {
   background-color: var(--main-title-color);
 }
 header .ham {
@@ -130,49 +125,51 @@ header .ham span {
           animation-name: slidein;
 }
 .main__banner p {
-  font-size: 1.5rem;
-  font-weight: 400;
+  color: var(--main-hd-color);
 }
 
 /* ----------body----------- */
 main {
-  max-width: 95%;
+  max-width: 90%;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
 }
 
 /* -----------productos--------- */
 .titlepos {
-  margin: 50px auto;
+  display: none;
+  margin: 3rem auto;
 }
-.titlepos .titlepos__container {
+.titlepos :first-child {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
 }
 
 .productos__pospago {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 5rem auto;
 }
 .productos__pospago .productos__pospago--container {
-  display: inline-block;
-  width: 49%;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
 }
 .productos__pospago img {
   width: 100%;
+}
+.productos__pospago picture {
+  display: flex;
+  margin: auto;
 }
 
 .planespospago {
   display: flex;
   justify-content: space-around;
-  font-size: 1rem;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -180,7 +177,7 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 5rem 0.55rem;
+  margin: 3rem 0.5rem;
 }
 .planespospago dt p {
   background-color: var(--main-hd-color);
@@ -239,9 +236,10 @@ main {
 
 .roaming {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  margin: 4rem auto;
 }
 .roaming img {
   width: 100%;
@@ -252,7 +250,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  margin: 4rem auto;
 }
 .services div {
   width: 30%;
@@ -283,9 +281,8 @@ main {
 }
 
 /* -------------Promociones------------- */
-.title__prom,
-.title__p {
-  color: #fff;
+.promociones__title {
+  display: none;
 }
 
 .promociones {
@@ -293,45 +290,36 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 3rem;
+  margin: 4rem auto;
 }
 .promociones .promociones__triplica {
   display: flex;
   justify-content: flex-start;
-  margin: 2rem 0;
+  margin: 3rem auto;
 }
-.promociones .promociones__triplica--text {
+.promociones .promociones__triplica--text,
+.promociones .promociones__pack--text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-align: justify;
   flex-direction: column;
-  margin: 0 2rem 0 0;
+  margin: 2rem auto;
 }
-.promociones .promociones__triplica--text p {
-  text-indent: 1rem;
-}
-.promociones h3 {
-  margin: 0 0 2rem 0;
+.promociones h2 {
+  margin: 2rem auto;
 }
 .promociones .promociones__list {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   line-height: 2;
-  margin: 3rem 0 0 0;
+  margin: 3rem auto;
 }
 .promociones .promociones__pack {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.promociones .promociones__pack--text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 0 0 3rem;
 }
 .promociones picture {
   display: flex;
@@ -339,6 +327,9 @@ main {
   align-items: center;
   text-align: center;
   width: 100%;
+}
+.promociones picture img {
+  width: 60%;
 }
 
 .promociones__others--title {
@@ -348,7 +339,7 @@ main {
 .promociones__others--list {
   display: flex;
   justify-content: space-between;
-  margin: 5rem 0;
+  margin: 5rem auto;
 }
 .promociones__others--list li {
   width: 30%;
@@ -362,7 +353,7 @@ main {
   text-align: justify;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(4, 1fr);
-  margin: 50px 0 0 0;
+  margin: 6rem auto;
   grid-template-areas: "uno dos" "uno tres" "cuatro cuatro" "cinco cinco";
 }
 .main__section .uno {
@@ -387,7 +378,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: auto 2rem;
   text-indent: 2rem;
 }
 
@@ -411,7 +402,7 @@ main {
   flex-direction: column;
 }
 .second__section i {
-  font-size: 5rem;
+  font-size: 7rem;
 }
 .second__section .second__Section--paragraphuno,
 .second__section .second__section--paragraphdos {
@@ -431,7 +422,7 @@ main {
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  margin: 0 0 50px 0;
+  margin: 1rem 4rem;
 }
 .second__section i:hover {
   color: var(--main-title-color);
@@ -441,11 +432,14 @@ main {
 /* -----------encuentranos--------- */
 .section__title--map {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: 5rem 0;
+  margin: 5rem auto;
+}
+.section__title--map :first-child {
+  margin: 3rem auto;
 }
 
 .section__map {
@@ -454,8 +448,9 @@ main {
 
 .section__map--container,
 .location {
-  width: 100%;
-  height: 50vh;
+  width: 80%;
+  height: 80vh;
+  margin-bottom: 3rem;
 }
 
 /* -------------Contacto------------ */
@@ -466,13 +461,13 @@ main {
 
 .contacto {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: baseline;
-  margin: 0 auto;
+  margin: 2rem auto;
   flex-wrap: wrap;
   width: 100%;
 }
-.contacto .mensajes,
+.contacto .mensajes div,
 .contacto .email {
   display: flex;
   flex-direction: column;
@@ -493,9 +488,11 @@ main {
 .contacto input {
   border: none;
   outline: var(--main-bgul-color) solid 1px;
+  border-radius: 0.4rem;
   margin: 0.2rem;
   padding: 0.2rem;
   width: 100%;
+  font-size: 1.5rem;
 }
 .contacto label {
   margin: 0.3rem;
@@ -514,10 +511,11 @@ main {
 }
 .contacto .area textarea {
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   outline: var(--main-bgul-color) solid 1px;
   width: 100%;
   resize: none;
+  font-size: 1.5rem;
 }
 .contacto .data input:focus {
   border: none;
@@ -529,7 +527,8 @@ main {
   outline: var(--main-title-color) solid 1px;
   border-radius: 0.3rem;
 }
-.contacto .mensajes {
+.contacto .mensajes div {
+  width: 100%;
   align-items: flex-start;
 }
 .contacto .mensajes a,
