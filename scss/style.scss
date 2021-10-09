@@ -12,7 +12,7 @@
         --main-bgul-color: #3D3C3C;
     }
     
-    html {
+    html:focus-within {
         scroll-behavior: smooth;
     }
     
@@ -27,22 +27,26 @@
         min-width: 250px;
     }
     
+    p {
+        font-size: 1.3rem
+    }
+    
     h1,
     h2,
     h3 {
-        font-size: 5rem;
+        font-size: 7rem;
         font-weight: 700;
         color: var(--main-title-color);
     }
     
     h2 {
-        font-size: 3rem;
+        font-size: 5rem;
         font-weight: 400;
     }
     
     h3 {
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 3rem;
+        font-weight: 400;
     }
     
     .logo {
@@ -72,7 +76,7 @@
             li {
                 padding: 1.5rem 1.5rem;
                 list-style: none;
-                transition: 1s ease-in-out;
+                transition: .7s ease-in-out;
                 .menu__item {
                     font-weight: 400;
                     padding: 1rem;
@@ -121,19 +125,18 @@
             position: absolute;
             margin-left: 10%;
             line-height: 3rem;
-            font-weight: 700;
             animation-duration: 2s;
             animation-name: slidein;
         }
         p {
             font-size: 1.5rem;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
     /* ----------body----------- */
     
     main {
-        max-width: 80%;
+        max-width: 95%;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
@@ -176,27 +179,29 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            margin: 100px 5px;
+            margin: 5rem .55rem;
         }
         dt p {
             background-color: var(--main-hd-color);
             color: var(--main-bg-color);
-            padding: 10px;
-            width: 350px;
+            padding: 1rem;
+            width: 25rem;
         }
         .precio,
         .minutos {
+            text-align: center;
             background: var(--main-bgul-color);
             color: var(--main-bg-color);
-            padding: 10px;
-            width: 350px;
+            padding: 1rem;
+            width: 25rem;
         }
         .servicio {
-            padding: 10px;
-            width: 350px;
+            text-align: center;
+            padding: 1rem;
+            width: 25rem;
         }
         .call {
-            margin: 10px 0 0 0;
+            margin: .8rem auto;
         }
     }
     
@@ -346,7 +351,7 @@
     }
     
     // -----------------Promocionesfin--------------
-    /* ----------quienessomos----------- */
+    /* ----------nosotros----------- */
     
     .main__section {
         display: grid;
@@ -358,6 +363,9 @@
         grid-template-areas: 'uno dos' 'uno tres' 'cuatro cuatro' 'cinco cinco';
         .uno {
             grid-area: uno;
+            h2 {
+                text-align: center;
+            }
         }
         .dos {
             grid-area: dos;
@@ -374,7 +382,6 @@
         .main__section--title {
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
             margin: 0 2rem;
             text-indent: 2rem;
@@ -426,13 +433,8 @@
             color: var(--main-title-color);
         }
     }
-    /* ----------quienessomosfin----------- */
-    /* -----------Donde estamos--------- */
-    
-    .banner--map {
-        width: 100%;
-        margin: 2rem 0 0 50%;
-    }
+    /* ----------nosotrossfin----------- */
+    /* -----------encuentranos--------- */
     
     .section__title--map {
         display: flex;
@@ -450,7 +452,7 @@
     .section__map--container,
     .location {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
     }
     /* -------------Contacto------------ */
     
@@ -480,6 +482,9 @@
             margin: .4rem;
             padding: .3rem;
             width: 100%;
+        }
+        .form {
+            text-align: center;
         }
         input {
             border: none;

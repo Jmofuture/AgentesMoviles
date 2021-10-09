@@ -1,3 +1,181 @@
+@media only screen and (max-width: 1600px) {
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    h1,
+    h2,
+    h3 {
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--main-title-color);
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .logo {
+        width: 3rem;
+    }
+    header {
+        position: sticky;
+        .header__container {
+            padding: 1rem 0;
+            ul {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            li {
+                text-align: center;
+                font-size: 1.2rem;
+                padding: auto 0;
+            }
+        }
+    }
+    .main__banner--title {
+        p {
+            display: none;
+        }
+    }
+    // ---------------------
+    .services {
+        div {
+            width: 100%;
+            text-align: justify;
+            align-items: center;
+        }
+    }
+    .productos__pospago {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        img {
+            width: 80%;
+        }
+        .productos__pospago--container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .services div {
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .prepago {
+        text-align: center;
+        margin: 0 auto;
+        .prepago__container {
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .prepago__pasate {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        h3 {
+            margin: 2rem;
+        }
+        img {
+            width: 80%;
+        }
+    }
+    // ----------Promociones-------------
+    .promociones__triplica,
+    .promociones__pack {
+        font-size: 1rem;
+    }
+    .promociones__pack {
+        flex-direction: column-reverse;
+    }
+    .promociones__others--list {
+        font-size: 1rem;
+        display: grid;
+        text-align: center;
+        li {
+            width: 80%;
+            margin: 1rem auto;
+        }
+    }
+    // ----------quienessomos-------------
+    .main__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            margin: 1rem auto;
+        }
+    }
+    // ----------encuentranos-------------
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__title--map {
+        flex-direction: column;
+        div {
+            margin: 1rem auto;
+        }
+    }
+    // -------------contacto------------
+    .data {
+        align-items: center;
+        label,
+        input {
+            margin: .2rem;
+            padding: .5rem;
+            width: 100%;
+            border-radius: .2rem;
+        }
+    }
+    .contacto .mensajes {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .mensajes span {
+        display: none;
+    }
+    .mensajes i {
+        font-size: 3rem;
+    }
+    // -------------------------------
+    footer {
+        font-size: 1rem;
+        p {
+            display: none;
+        }
+        .footer__socialMedia {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 20%;
+            margin-right: 10px;
+            i {
+                font-size: 2rem;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+// -------------------------------
 @media only screen and (max-width: 600px) {
     main {
         margin: 0 auto;
@@ -18,7 +196,7 @@
     }
     h3 {
         font-size: 1.5rem;
-        font-weight: 300;
+        font-weight: 400;
     }
     .logo {
         width: 3rem;
@@ -143,7 +321,6 @@
     }
     .banner--map {
         width: 100%;
-        height: 40vh;
         margin-left: 0%;
     }
     .section__title--map {
@@ -192,208 +369,3 @@
 }
 
 // ------------------fin600px----------------
-@media only screen and (max-width: 1100px) {
-    main {
-        margin: 0 auto;
-    }
-    p {
-        font-size: 1rem;
-    }
-    h1,
-    h2,
-    h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--main-title-color);
-    }
-    h2 {
-        font-size: 1.7rem;
-        font-weight: 400;
-    }
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-    .logo {
-        width: 3rem;
-    }
-    header {
-        position: sticky;
-        .header__container {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 1.5rem 0;
-            ul {
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                height: 92vh;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                display: none;
-                opacity: 0;
-                li {
-                    width: 100%;
-                    text-align: center;
-                    padding: 1rem;
-                }
-            }
-        }
-        .menu.active {
-            display: flex;
-            text-decoration: none;
-            animation: menu .5s ease-in-out both;
-        }
-        .ham {
-            display: block;
-            position: absolute;
-            top: 2.2rem;
-            right: 1.3rem;
-        }
-    }
-    .main__banner--title {
-        p,
-        h1 {
-            display: none;
-        }
-    }
-    // ---------------------
-    .services {
-        flex-direction: column;
-        div {
-            width: 100%;
-            text-align: justify;
-            align-items: center;
-        }
-    }
-    .productos__pospago {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        img {
-            width: 80%;
-        }
-        .productos__pospago--container {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-    .services div {
-        margin: 2rem auto;
-        text-align: center;
-    }
-    .prepago {
-        text-align: center;
-        margin: 0 auto;
-        .prepago__container {
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .prepago__pasate {
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-        h3 {
-            margin: 2rem;
-        }
-        img {
-            width: 80%;
-        }
-    }
-    // ----------Promosiones-------------
-    .promociones__triplica,
-    .promociones__pack {
-        flex-direction: column;
-        img {
-            margin: 1rem auto;
-        }
-        ul {
-            font-size: 1rem;
-        }
-    }
-    .promociones__pack {
-        flex-direction: column-reverse;
-    }
-    .promociones__others--list {
-        font-size: 1rem;
-        display: grid;
-        text-align: center;
-        li {
-            width: 80%;
-            margin: 1rem auto;
-        }
-    }
-    // ----------quienessomos-------------
-    .main__section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        p {
-            margin: 1rem auto;
-        }
-    }
-    // ----------Dondeestamos-------------
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .banner--map {
-        width: 100%;
-        height: 40vh;
-        margin-left: 0%;
-    }
-    .section__title--map {
-        flex-direction: column;
-    }
-    // -------------contacto------------
-    .data {
-        flex-direction: column;
-        align-items: center;
-        label,
-        input {
-            margin: .2rem;
-            padding: .1rem;
-            width: 100%;
-            border-radius: .2rem;
-        }
-    }
-    .contacto .mensajes {
-        display: block;
-        flex-direction: row;
-        text-align: center;
-    }
-    .mensajes span {
-        display: none;
-    }
-    .mensajes i {
-        font-size: 3rem;
-    }
-    // -------------------------------
-    footer {
-        font-size: 1rem;
-        p {
-            display: none;
-        }
-        .footer__socialMedia {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 20%;
-            margin-right: 10px;
-            i {
-                font-size: 2rem;
-                margin: 5px;
-            }
-        }
-    }
-}
