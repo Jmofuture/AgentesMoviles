@@ -1,10 +1,28 @@
-@media only screen and (max-width: 1600px) {
-    main {
-        margin: 0 auto;
-        width: 100%;
+@media only screen and (max-width: 1380px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    p {
-        font-size: 1.3rem;
+     :root {
+        --main-bg-color: #fff;
+        --main-hd-color: #000;
+        --main-text-color: #1f1e1e;
+        --main-title-color: #da291c;
+        --main-bgul-color: #3D3C3C;
+    }
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: var(--main-bg-color);
+        font-family: 'Josefin Sans', sans-serif;
+        color: var(--main-text-color);
+        margin: auto;
+        line-height: 1.7;
+        min-width: 250px;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
     h1,
     h2,
@@ -19,24 +37,23 @@
     }
     h3 {
         font-size: 2rem;
-        font-weight: 400;
-    }
-    .logo {
-        width: 3rem;
     }
     header {
-        position: sticky;
-        .header__container {
-            padding: 1rem 0;
-            ul {
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
+        .menu {
+            display: flex;
             li {
-                text-align: center;
-                font-size: 1.2rem;
-                padding: auto 0;
+                padding: .3rem .3rem;
+                list-style: none;
+                transition: .5s ease-in-out;
+                .menu__item {
+                    display: block;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: var(--main-bg-color);
+                }
+                 :hover {
+                    background-color: var(--main-title-color);
+                }
             }
         }
     }
@@ -54,25 +71,22 @@
         }
     }
     .productos__pospago {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
         img {
             width: 80%;
+            margin: 3rem auto;
         }
         .productos__pospago--container {
-            display: flex;
-            justify-content: center;
+            width: 60%;
             text-align: center;
-            flex-direction: column;
-            width: 100%;
         }
     }
-    .services div {
-        margin: 2rem auto;
-        text-align: center;
+    .services {
+        flex-wrap: wrap;
+        div {
+            margin: 2rem auto;
+            text-align: center;
+            width: 30%;
+        }
     }
     .prepago {
         text-align: center;
@@ -81,11 +95,26 @@
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
+             :first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            picture {
+                margin: 0 0 0 4rem
+            }
         }
         .prepago__pasate {
             flex-wrap: wrap-reverse;
             justify-content: center;
             align-items: center;
+            margin: 0 auto;
+            .prepagoTitleFour {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
         }
         h3 {
             margin: 2rem;
@@ -95,23 +124,20 @@
         }
     }
     // ----------Promociones-------------
-    .promociones__triplica,
-    .promociones__pack {
-        font-size: 1rem;
+    .promociones__triplica {
+        flex-direction: column;
     }
     .promociones__pack {
         flex-direction: column-reverse;
     }
     .promociones__others--list {
-        font-size: 1rem;
-        display: grid;
         text-align: center;
         li {
             width: 80%;
             margin: 1rem auto;
         }
     }
-    // ----------quienessomos-------------
+    // ----------nosotros-------------
     .main__section {
         display: flex;
         justify-content: center;
@@ -121,17 +147,21 @@
             margin: 1rem auto;
         }
     }
+    .agents {
+        width: 50%;
+        line-height: 1;
+    }
     // ----------encuentranos-------------
     .main {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .section__title--map {
-        flex-direction: column;
-        div {
-            margin: 1rem auto;
-        }
+    .section__map--container,
+    .location {
+        width: 80vw;
+        height: 50vh;
+        margin-bottom: 3rem;
     }
     // -------------contacto------------
     .data {
@@ -146,8 +176,13 @@
     }
     .contacto .mensajes {
         display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        div {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
     .mensajes span {
         display: none;
@@ -186,12 +221,12 @@
     h1,
     h2,
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
         color: var(--main-title-color);
     }
     h2 {
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 400;
     }
     h3 {
@@ -243,34 +278,39 @@
         }
     }
     // ---------------------
-    .services {
-        flex-direction: column;
-        div {
-            width: 100%;
-            text-align: justify;
-            align-items: center;
-        }
-    }
     .productos__pospago {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
         img {
             width: 80%;
+            margin: 3rem auto;
         }
         .productos__pospago--container {
-            display: flex;
-            justify-content: center;
+            width: 60%;
             text-align: center;
-            flex-direction: column;
-            width: 100%;
         }
     }
-    .services div {
-        margin: 2rem auto;
-        text-align: center;
+    .planespospago {
+        dt p {
+            width: 15rem;
+        }
+        .precio,
+        .minutos {
+            width: 15rem;
+        }
+        .servicio {
+            width: 15rem;
+        }
+        .call {
+            margin: .8rem auto;
+        }
+    }
+    .services {
+        flex-wrap: wrap;
+        flex-direction: column;
+        div {
+            margin: 1rem auto;
+            text-align: center;
+            width: 100%;
+        }
     }
     .prepago {
         text-align: center;
@@ -279,11 +319,17 @@
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
+             :first-child {
+                flex-direction: column;
+            }
+            picture {
+                margin: 0 2rem 0 0;
+            }
         }
         .prepago__pasate {
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            align-items: center;
+            .prepagoTitleFour {
+                flex-direction: column;
+            }
         }
         h3 {
             margin: 2rem;
@@ -293,38 +339,46 @@
         }
     }
     // ----------Promociones-------------
-    .promociones__triplica,
-    .promociones__pack {
-        flex-direction: column;
-        img {
-            margin: 1rem auto;
+    .promociones__title {
+        display: flex;
+    }
+    .promociones {
+        margin: 2rem auto;
+        .promociones__triplica {
+            margin: 0rem;
         }
+        li {
+            font-size: 1rem;
+        }
+    }
+    .promociones__triplica {
+        margin: 0 auto;
     }
     .promociones__pack {
         flex-direction: column-reverse;
     }
-    // ----------quienessomos-------------
+    .promociones__others--list {
+        flex-direction: column;
+    }
+    // ----------nosotros-------------
     .main__section {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 3rem auto;
         p {
             margin: 1rem auto;
         }
     }
     // ----------Encuentranos-------------
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .banner--map {
         width: 100%;
         margin-left: 0%;
     }
     .section__title--map {
         flex-direction: column;
+        margin: 0 auto 4rem;
     }
     // -------------contacto------------
     .data {

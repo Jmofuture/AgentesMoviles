@@ -55,7 +55,6 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
-  color: var(--main-bg-color);
 }
 header .header__container {
   display: flex;
@@ -131,7 +130,10 @@ header .ham span {
 /* ----------body----------- */
 main {
   max-width: 90%;
-  margin: auto;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 /* -----------productos--------- */
@@ -436,7 +438,7 @@ main {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: 5rem auto;
+  margin: 3rem auto;
 }
 .section__title--map :first-child {
   margin: 3rem auto;
@@ -577,14 +579,34 @@ footer i:hover {
 }
 
 /* -------------media------------ */
-@media only screen and (max-width: 1600px) {
-  main {
-    margin: 0 auto;
-    width: 100%;
+@media only screen and (max-width: 1380px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  p {
-    font-size: 1.3rem;
+  :root {
+    --main-bg-color: #fff;
+    --main-hd-color: #000;
+    --main-text-color: #1f1e1e;
+    --main-title-color: #da291c;
+    --main-bgul-color: #3D3C3C;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--main-bg-color);
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--main-text-color);
+    margin: auto;
+    line-height: 1.7;
+    min-width: 250px;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 
   h1,
@@ -602,28 +624,24 @@ h3 {
 
   h3 {
     font-size: 2rem;
-    font-weight: 400;
   }
 
-  .logo {
-    width: 3rem;
+  header .menu {
+    display: flex;
   }
-
-  header {
-    position: sticky;
+  header .menu li {
+    padding: 0.3rem 0.3rem;
+    list-style: none;
+    transition: 0.5s ease-in-out;
   }
-  header .header__container {
-    padding: 1rem 0;
+  header .menu li .menu__item {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--main-bg-color);
   }
-  header .header__container ul {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  header .header__container li {
-    text-align: center;
-    font-size: 1.2rem;
-    padding: auto 0;
+  header .menu li :hover {
+    background-color: var(--main-title-color);
   }
 
   .main__banner--title p {
@@ -636,27 +654,22 @@ h3 {
     align-items: center;
   }
 
-  .productos__pospago {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
   .productos__pospago img {
     width: 80%;
+    margin: 3rem auto;
   }
   .productos__pospago .productos__pospago--container {
-    display: flex;
-    justify-content: center;
+    width: 60%;
     text-align: center;
-    flex-direction: column;
-    width: 100%;
   }
 
+  .services {
+    flex-wrap: wrap;
+  }
   .services div {
     margin: 2rem auto;
     text-align: center;
+    width: 30%;
   }
 
   .prepago {
@@ -668,10 +681,25 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
   }
+  .prepago .prepago__container :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prepago .prepago__container picture {
+    margin: 0 0 0 4rem;
+  }
   .prepago .prepago__pasate {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+  }
+  .prepago .prepago__pasate .prepagoTitleFour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
   }
   .prepago h3 {
     margin: 2rem;
@@ -680,9 +708,8 @@ h3 {
     width: 80%;
   }
 
-  .promociones__triplica,
-.promociones__pack {
-    font-size: 1rem;
+  .promociones__triplica {
+    flex-direction: column;
   }
 
   .promociones__pack {
@@ -690,8 +717,6 @@ h3 {
   }
 
   .promociones__others--list {
-    font-size: 1rem;
-    display: grid;
     text-align: center;
   }
   .promociones__others--list li {
@@ -709,17 +734,22 @@ h3 {
     margin: 1rem auto;
   }
 
+  .agents {
+    width: 50%;
+    line-height: 1;
+  }
+
   .main {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .section__title--map {
-    flex-direction: column;
-  }
-  .section__title--map div {
-    margin: 1rem auto;
+  .section__map--container,
+.location {
+    width: 80vw;
+    height: 50vh;
+    margin-bottom: 3rem;
   }
 
   .data {
@@ -735,8 +765,13 @@ h3 {
 
   .contacto .mensajes {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .contacto .mensajes div {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .mensajes span {
@@ -777,13 +812,13 @@ h3 {
   h1,
 h2,
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--main-title-color);
   }
 
   h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 
@@ -838,36 +873,37 @@ h3 {
     display: none;
   }
 
-  .services {
-    flex-direction: column;
-  }
-  .services div {
-    width: 100%;
-    text-align: justify;
-    align-items: center;
-  }
-
-  .productos__pospago {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
   .productos__pospago img {
     width: 80%;
+    margin: 3rem auto;
   }
   .productos__pospago .productos__pospago--container {
-    display: flex;
-    justify-content: center;
+    width: 60%;
     text-align: center;
-    flex-direction: column;
-    width: 100%;
   }
 
+  .planespospago dt p {
+    width: 15rem;
+  }
+  .planespospago .precio,
+.planespospago .minutos {
+    width: 15rem;
+  }
+  .planespospago .servicio {
+    width: 15rem;
+  }
+  .planespospago .call {
+    margin: 0.8rem auto;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   .services div {
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
+    width: 100%;
   }
 
   .prepago {
@@ -879,10 +915,14 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
   }
-  .prepago .prepago__pasate {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
+  .prepago .prepago__container :first-child {
+    flex-direction: column;
+  }
+  .prepago .prepago__container picture {
+    margin: 0 2rem 0 0;
+  }
+  .prepago .prepago__pasate .prepagoTitleFour {
+    flex-direction: column;
   }
   .prepago h3 {
     margin: 2rem;
@@ -891,17 +931,30 @@ h3 {
     width: 80%;
   }
 
-  .promociones__triplica,
-.promociones__pack {
-    flex-direction: column;
+  .promociones__title {
+    display: flex;
   }
-  .promociones__triplica img,
-.promociones__pack img {
-    margin: 1rem auto;
+
+  .promociones {
+    margin: 2rem auto;
+  }
+  .promociones .promociones__triplica {
+    margin: 0rem;
+  }
+  .promociones li {
+    font-size: 1rem;
+  }
+
+  .promociones__triplica {
+    margin: 0 auto;
   }
 
   .promociones__pack {
     flex-direction: column-reverse;
+  }
+
+  .promociones__others--list {
+    flex-direction: column;
   }
 
   .main__section {
@@ -909,15 +962,10 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 3rem auto;
   }
   .main__section p {
     margin: 1rem auto;
-  }
-
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .banner--map {
@@ -927,6 +975,7 @@ h3 {
 
   .section__title--map {
     flex-direction: column;
+    margin: 0 auto 4rem;
   }
 
   .data {
