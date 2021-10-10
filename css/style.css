@@ -540,17 +540,9 @@ main {
   text-decoration: none;
   color: var(--main-hd-color);
 }
-.contacto .mensajes .fa-whatsapp:hover {
-  color: #075E54;
-}
-.contacto .mensajes .fa-facebook-messenger:hover {
-  color: #006AFF;
-}
-.contacto .mensajes .fa-telegram:hover {
-  color: #0088CC;
-}
-.contacto .mensajes .fa-instagram:hover {
-  color: #C13584;
+.contacto .mensajes a :hover,
+.contacto i :hover {
+  color: var(--main-title-color);
 }
 
 /* -------------footer------------ */

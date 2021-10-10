@@ -1,425 +1,425 @@
-@media only screen and (max-width: 1380px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-     :root {
-        --main-bg-color: #fff;
-        --main-hd-color: #000;
-        --main-text-color: #1f1e1e;
-        --main-title-color: #da291c;
-        --main-bgul-color: #3D3C3C;
-    }
-    html:focus-within {
-        scroll-behavior: smooth;
-    }
-    body {
-        background-color: var(--main-bg-color);
-        font-family: 'Josefin Sans', sans-serif;
-        color: var(--main-text-color);
-        margin: auto;
-        line-height: 1.7;
-        min-width: 250px;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-    h1,
-    h2,
-    h3 {
-        font-size: 5rem;
-        font-weight: 700;
-        color: var(--main-title-color);
-    }
-    h2 {
-        font-size: 3rem;
-        font-weight: 400;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    header {
-        .menu {
-            display: flex;
-            li {
-                padding: .3rem .3rem;
-                list-style: none;
-                transition: .5s ease-in-out;
-                .menu__item {
-                    display: block;
-                    padding: 1rem;
-                    text-decoration: none;
-                    color: var(--main-bg-color);
-                }
-                 :hover {
-                    background-color: var(--main-title-color);
-                }
-            }
+    @media only screen and (max-width: 1380px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    }
-    .main__banner--title {
-        p {
-            display: none;
+         :root {
+            --main-bg-color: #fff;
+            --main-hd-color: #000;
+            --main-text-color: #1f1e1e;
+            --main-title-color: #da291c;
+            --main-bgul-color: #3D3C3C;
         }
-    }
-    // ---------------------
-    .services {
-        div {
-            width: 100%;
-            text-align: justify;
-            align-items: center;
+        html:focus-within {
+            scroll-behavior: smooth;
         }
-    }
-    .productos__pospago {
-        img {
-            width: 80%;
-            margin: 3rem auto;
+        body {
+            background-color: var(--main-bg-color);
+            font-family: 'Josefin Sans', sans-serif;
+            color: var(--main-text-color);
+            margin: auto;
+            line-height: 1.7;
+            min-width: 250px;
+            font-size: 1.2rem;
+            font-weight: 400;
         }
-        .productos__pospago--container {
-            width: 60%;
-            text-align: center;
+        h1,
+        h2,
+        h3 {
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--main-title-color);
         }
-    }
-    .services {
-        flex-wrap: wrap;
-        div {
-            margin: 2rem auto;
-            text-align: center;
-            width: 30%;
-        }
-    }
-    .prepago {
-        text-align: center;
-        margin: 0 auto;
-        .prepago__container {
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-             :first-child {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            picture {
-                margin: 0 0 0 4rem
-            }
-        }
-        .prepago__pasate {
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            .prepagoTitleFour {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row-reverse;
-            }
+        h2 {
+            font-size: 3rem;
+            font-weight: 400;
         }
         h3 {
-            margin: 2rem;
+            font-size: 2rem;
         }
-        img {
-            width: 80%;
-        }
-    }
-    // ----------Promociones-------------
-    .promociones__triplica {
-        flex-direction: column;
-    }
-    .promociones__pack {
-        flex-direction: column-reverse;
-    }
-    .promociones__others--list {
-        text-align: center;
-        li {
-            width: 80%;
-            margin: 1rem auto;
-        }
-    }
-    // ----------nosotros-------------
-    .main__section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        p {
-            margin: 1rem auto;
-        }
-    }
-    .agents {
-        width: 50%;
-        line-height: 1;
-    }
-    // ----------encuentranos-------------
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .section__map--container,
-    .location {
-        width: 80vw;
-        height: 50vh;
-        margin-bottom: 3rem;
-    }
-    // -------------contacto------------
-    .data {
-        align-items: center;
-        label,
-        input {
-            margin: .2rem;
-            padding: .5rem;
-            width: 100%;
-            border-radius: .2rem;
-        }
-    }
-    .contacto .mensajes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        div {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    }
-    .mensajes span {
-        display: none;
-    }
-    .mensajes i {
-        font-size: 3rem;
-    }
-    // -------------------------------
-    footer {
-        font-size: 1rem;
-        p {
-            display: none;
-        }
-        .footer__socialMedia {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 20%;
-            margin-right: 10px;
-            i {
-                font-size: 2rem;
-                margin: 5px;
-            }
-        }
-    }
-}
-
-// -------------------------------
-@media only screen and (max-width: 600px) {
-    main {
-        margin: 0 auto;
-    }
-    p {
-        font-size: 1rem;
-    }
-    h1,
-    h2,
-    h3 {
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--main-title-color);
-    }
-    h2 {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-    .logo {
-        width: 3rem;
-    }
-    header {
-        position: sticky;
-        .header__container {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 1.5rem 0;
-            ul {
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                height: 92vh;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                display: none;
-                opacity: 0;
+        header {
+            .menu {
+                display: flex;
                 li {
-                    width: 100%;
-                    text-align: center;
-                    padding: 1rem;
+                    padding: .3rem .3rem;
+                    list-style: none;
+                    transition: .5s ease-in-out;
+                    .menu__item {
+                        display: block;
+                        padding: 1rem;
+                        text-decoration: none;
+                        color: var(--main-bg-color);
+                    }
+                     :hover {
+                        background-color: var(--main-title-color);
+                    }
                 }
             }
         }
-        .menu.active {
+        .main__banner--title {
+            p {
+                display: none;
+            }
+        }
+        // ---------------------
+        .services {
+            div {
+                width: 100%;
+                text-align: justify;
+                align-items: center;
+            }
+        }
+        .productos__pospago {
+            img {
+                width: 80%;
+                margin: 3rem auto;
+            }
+            .productos__pospago--container {
+                width: 60%;
+                text-align: center;
+            }
+        }
+        .services {
+            flex-wrap: wrap;
+            div {
+                margin: 2rem auto;
+                text-align: center;
+                width: 30%;
+            }
+        }
+        .prepago {
+            text-align: center;
+            margin: 0 auto;
+            .prepago__container {
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                 :first-child {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                picture {
+                    margin: 0 0 0 4rem
+                }
+            }
+            .prepago__pasate {
+                flex-wrap: wrap-reverse;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                .prepagoTitleFour {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                }
+            }
+            h3 {
+                margin: 2rem;
+            }
+            img {
+                width: 80%;
+            }
+        }
+        // ----------Promociones-------------
+        .promociones__triplica {
+            flex-direction: column;
+        }
+        .promociones__pack {
+            flex-direction: column-reverse;
+        }
+        .promociones__others--list {
+            text-align: center;
+            li {
+                width: 80%;
+                margin: 1rem auto;
+            }
+        }
+        // ----------nosotros-------------
+        .main__section {
             display: flex;
-            text-decoration: none;
-            animation: menu .5s ease-in-out both;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p {
+                margin: 1rem auto;
+            }
         }
-        .ham {
-            display: block;
-            position: absolute;
-            top: 2.2rem;
-            right: 1.3rem;
+        .agents {
+            width: 50%;
+            line-height: 1;
         }
-    }
-    .main__banner--title {
-        p,
-        h1 {
+        // ----------encuentranos-------------
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section__map--container,
+        .location {
+            width: 80vw;
+            height: 50vh;
+            margin-bottom: 3rem;
+        }
+        // -------------contacto------------
+        .data {
+            align-items: center;
+            label,
+            input {
+                margin: .2rem;
+                padding: .5rem;
+                width: 100%;
+                border-radius: .2rem;
+            }
+        }
+        .contacto .mensajes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            div {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        .mensajes span {
             display: none;
         }
-    }
-    // ---------------------
-    .productos__pospago {
-        img {
-            width: 80%;
-            margin: 3rem auto;
+        .mensajes i {
+            font-size: 3rem;
         }
-        .productos__pospago--container {
-            width: 60%;
-            text-align: center;
-        }
-    }
-    .planespospago {
-        dt p {
-            width: 15rem;
-        }
-        .precio,
-        .minutos {
-            width: 15rem;
-        }
-        .servicio {
-            width: 15rem;
-        }
-        .call {
-            margin: .8rem auto;
-        }
-    }
-    .services {
-        flex-wrap: wrap;
-        flex-direction: column;
-        div {
-            margin: 1rem auto;
-            text-align: center;
-            width: 100%;
-        }
-    }
-    .prepago {
-        text-align: center;
-        margin: 0 auto;
-        .prepago__container {
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-             :first-child {
-                flex-direction: column;
+        // -------------------------------
+        footer {
+            font-size: 1rem;
+            p {
+                display: none;
             }
-            picture {
-                margin: 0 2rem 0 0;
+            .footer__socialMedia {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20%;
+                margin-right: 10px;
+                i {
+                    font-size: 2rem;
+                    margin: 5px;
+                }
             }
         }
-        .prepago__pasate {
-            .prepagoTitleFour {
-                flex-direction: column;
-            }
-        }
-        h3 {
-            margin: 2rem;
-        }
-        img {
-            width: 80%;
-        }
     }
-    // ----------Promociones-------------
-    .promociones__title {
-        display: flex;
-    }
-    .promociones {
-        margin: 2rem auto;
-        .promociones__triplica {
-            margin: 0rem;
+    
+    // -------------------------------
+    @media only screen and (max-width: 600px) {
+        main {
+            margin: 0 auto;
         }
-        li {
+        p {
             font-size: 1rem;
         }
-    }
-    .promociones__triplica {
-        margin: 0 auto;
-    }
-    .promociones__pack {
-        flex-direction: column-reverse;
-    }
-    .promociones__others--list {
-        flex-direction: column;
-    }
-    // ----------nosotros-------------
-    .main__section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 3rem auto;
-        p {
-            margin: 1rem auto;
+        h1,
+        h2,
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--main-title-color);
         }
-    }
-    // ----------Encuentranos-------------
-    .banner--map {
-        width: 100%;
-        margin-left: 0%;
-    }
-    .section__title--map {
-        flex-direction: column;
-        margin: 0 auto 4rem;
-    }
-    // -------------contacto------------
-    .data {
-        flex-direction: column;
-        align-items: center;
-        input {
-            border: none;
-            margin: .2rem;
-            padding: .1rem;
-            width: 80%;
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
         }
-    }
-    .contacto .mensajes {
-        display: block;
-        flex-direction: row;
-        text-align: center;
-    }
-    .mensajes span {
-        display: none;
-    }
-    .mensajes i {
-        font-size: 3rem;
-    }
-    // -------------------------------
-    footer {
-        font-size: 1rem;
-        p {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        .logo {
+            width: 3rem;
+        }
+        header {
+            position: sticky;
+            .header__container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.5rem 0;
+                ul {
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 92vh;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    opacity: 0;
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .menu.active {
+                display: flex;
+                text-decoration: none;
+                animation: menu .5s ease-in-out both;
+            }
+            .ham {
+                display: block;
+                position: absolute;
+                top: 2.2rem;
+                right: 1.3rem;
+            }
+        }
+        .main__banner--title {
+            p,
+            h1 {
+                display: none;
+            }
+        }
+        // ---------------------
+        .productos__pospago {
+            img {
+                width: 80%;
+                margin: 3rem auto;
+            }
+            .productos__pospago--container {
+                width: 60%;
+                text-align: center;
+            }
+        }
+        .planespospago {
+            dt p {
+                width: 15rem;
+            }
+            .precio,
+            .minutos {
+                width: 15rem;
+            }
+            .servicio {
+                width: 15rem;
+            }
+            .call {
+                margin: .8rem auto;
+            }
+        }
+        .services {
+            flex-wrap: wrap;
+            flex-direction: column;
+            div {
+                margin: 1rem auto;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .prepago {
+            text-align: center;
+            margin: 0 auto;
+            .prepago__container {
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                 :first-child {
+                    flex-direction: column;
+                }
+                picture {
+                    margin: 0 2rem 0 0;
+                }
+            }
+            .prepago__pasate {
+                .prepagoTitleFour {
+                    flex-direction: column;
+                }
+            }
+            h3 {
+                margin: 2rem;
+            }
+            img {
+                width: 80%;
+            }
+        }
+        // ----------Promociones-------------
+        .promociones__title {
+            display: flex;
+        }
+        .promociones {
+            margin: 2rem auto;
+            .promociones__triplica {
+                margin: 0rem;
+            }
+            li {
+                font-size: 1rem;
+            }
+        }
+        .promociones__triplica {
+            margin: 0 auto;
+        }
+        .promociones__pack {
+            flex-direction: column-reverse;
+        }
+        .promociones__others--list {
+            flex-direction: column;
+        }
+        // ----------nosotros-------------
+        .main__section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 3rem auto;
+            p {
+                margin: 1rem auto;
+            }
+        }
+        // ----------Encuentranos-------------
+        .banner--map {
+            width: 100%;
+            margin-left: 0%;
+        }
+        .section__title--map {
+            flex-direction: column;
+            margin: 0 auto 4rem;
+        }
+        // -------------contacto------------
+        .data {
+            flex-direction: column;
+            align-items: center;
+            input {
+                border: none;
+                margin: .2rem;
+                padding: .1rem;
+                width: 80%;
+            }
+        }
+        .contacto .mensajes {
+            display: block;
+            flex-direction: row;
+            text-align: center;
+        }
+        .mensajes span {
             display: none;
         }
-        .footer__socialMedia {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 20%;
-            margin-right: 10px;
-            i {
-                font-size: 2rem;
-                margin: 5px;
+        .mensajes i {
+            font-size: 3rem;
+        }
+        // -------------------------------
+        footer {
+            font-size: 1rem;
+            p {
+                display: none;
+            }
+            .footer__socialMedia {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20%;
+                margin-right: 10px;
+                i {
+                    font-size: 2rem;
+                    margin: 5px;
+                }
             }
         }
     }
-}
-
-// ------------------fin600px----------------
+    
+    // ------------------fin600px----------------

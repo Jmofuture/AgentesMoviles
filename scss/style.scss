@@ -535,18 +535,9 @@
             font-size: 2rem;
             text-decoration: none;
             color: var(--main-hd-color);
-        }
-        .mensajes .fa-whatsapp:hover {
-            color: #075E54
-        }
-        .mensajes .fa-facebook-messenger:hover {
-            color: #006AFF;
-        }
-        .mensajes .fa-telegram:hover {
-            color: #0088CC;
-        }
-        .mensajes .fa-instagram:hover {
-            color: #C13584;
+             :hover {
+                color: var(--main-title-color)
+            }
         }
     }
     /* -------------footer------------ */
