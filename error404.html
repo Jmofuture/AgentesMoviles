@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<body lang="en">
+<body lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Agentes Móviles - Contacto</title>
+        <title>Agentes Móviles - Error 404</title>
         <meta name="description" content="Somos el  proveedor líder de telecomunicaciones en Uruguay con operación en los 19 departamentos.  Conoce nuestros servicios de Telefonía e Internet.">
         <meta name="keywords" content="Planes Celulares, Llamadas Ilimitadas, Whatsapp Gratis, Roaming, Packs de Internet, Factura Electrónica">
         <meta name="author" content="Jean Olmedillo">
@@ -17,90 +17,163 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Nunito+Sans:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
-
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+             :root {
+                --main-bg-color: #fff;
+                --main-hd-color: #000;
+                --main-text-color: #1f1e1e;
+                --main-title-color: #da291c;
+                --main-bgul-color: #3D3C3C;
+            }
+            
+            html:focus-within {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                background-color: var(--main-bg-color);
+                font-family: 'Josefin Sans', sans-serif;
+                color: var(--main-text-color);
+                margin: auto;
+                line-height: 1.7;
+                min-width: 250px;
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+            
+            h1,
+            h2,
+            h3 {
+                font-size: 7rem;
+                font-weight: 700;
+                color: var(--main-title-color);
+            }
+            
+            h2 {
+                font-size: 5rem;
+                font-weight: 400;
+            }
+            
+            h3 {
+                font-size: 3rem;
+            }
+            
+            .logo {
+                width: 4rem;
+            }
+            
+            header {
+                background-color: var(--main-hd-color);
+                position: sticky;
+                width: 100%;
+                top: 0;
+                z-index: 100;
+            }
+            
+            .header__container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            
+            #main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+            }
+            
+            #errortitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 2rem;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+            }
+            
+            a:hover {
+                color: #fff;
+            }
+            
+            button {
+                background-color: #da291c;
+                padding: 1rem;
+                border-radius: .8rem;
+            }
+            
+            @media only screen and (max-width: 1380px) {
+                #main {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                #errortitle {
+                    margin: 2rem;
+                }
+            }
+        </style>
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__container">
+        <header>
+            <nav class="header__container">
                 <a href="index.html">
-                    <img src="/img/logo.png" alt="Logo Agentes Móviles" class="logo">
+                    <img src="img/logo.png" alt="Logo Agentes Móviles" class="logo">
                 </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../Index.html">Productos y Servicios</a>
-                        </li>
-                        <li>
-                            <a href="promosiones.html">Promosiones</a>
-                        </li>
-                        <li>
-                            <a href="quienessomos.html">Quiénes Somos</a>
-                        </li>
-                        <li>
-                            <a href="dondeestamos.html">Dónde Estamos</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </header>
-        <div class="main__banner">
-            <img src="../img/img-slide.jpg" alt="Agentes Móviles Uruguay" class="banner">
-            <div class="main__banner--title">
-                <h1>Agentes Móviles</h1>
-                <p>Líder de telecomunicaciones con operación en <strong>Uruguay.</strong></p>
-            </div>
-        </div>
-
         <section class="position-relative z-index-1 padding-y-xl">
             <div class="container max-width-adaptive-lg">
-                <div class="grid gap-lg items-center">
-                    <div class="col-5@md">
+                <div class="grid gap-lg items-center" id="main">
+                    <div class="col-5@md" id="errortitle">
                         <div class="text-component">
-                            <p class="text-sm color-contrast-medium">How it works</p>
-                            <h1>Lorem ipsum</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo.</p>
+                            <h1>Agentes Móviles</h1>
+                            <p>Este plan no está disponible, te invitamos a revisar los que tenemos en promoción..</p>
                         </div>
-
                         <div class="margin-top-sm">
                             <div class="flex flex-wrap gap-sm items-center">
-                                <a href="#0" class="btn btn--primary">Productos</a>
-                                <a href="#0" class="color-inherit">Learn more</a>
+                                <button>
+                                <a href="index.html" class="color-inherit">Planes y servicios</a>
+                            </button>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-7@md">
                         <div class="device-group-1">
                             <div class="dev-phone-3d-wrapper">
-
                                 <div class="dev-phone dev-phone--top-light" aria-label="Image description">
                                     <div class="dev-phone__body">
                                         <div class="dev-phone__media">
                                             <div class="dev-phone__notch"></div>
                                             <img src="../img/300ben.JPG" alt="">
-
                                         </div>
                                     </div>
                                     <div class="dev-phone__shadow"></div>
                                 </div>
                             </div>
-
                             <div class="dev-phone dev-phone--dark dev-phone--top-light" aria-label="Image description">
-                                <div class="dev-phone__body">
-                                    <div class="dev-phone__media">
-                                        <div class="dev-phone__notch"></div>
-                                        <img src="../img/3plica.jpg" alt="">
-                                    </div>
+                                <div class="dev-phone__media">
+                                    <div class="dev-phone__notch"></div>
+                                    <img src="img/llamadaperdida.jpg" alt="">
                                 </div>
                                 <div class="dev-phone__shadow"></div>
                             </div>
-
                             <div class="dev-phone-3d-wrapper">
-
                                 <div class="dev-phone dev-phone--top-light" aria-label="Image description">
                                     <div class="dev-phone__body">
                                         <div class="dev-phone__media">
