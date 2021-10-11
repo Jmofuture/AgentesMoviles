@@ -23,7 +23,7 @@ body {
   margin: auto;
   line-height: 1.7;
   min-width: 250px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
@@ -51,6 +51,7 @@ h3 {
 /* ---------Header---------- */
 header {
   background-color: var(--main-hd-color);
+  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   top: 0;
@@ -597,7 +598,7 @@ footer i:hover {
     margin: auto;
     line-height: 1.7;
     min-width: 250px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
   }
 
@@ -824,6 +825,7 @@ h3 {
   }
 
   header {
+    position: -webkit-sticky;
     position: sticky;
   }
   header .header__container {
